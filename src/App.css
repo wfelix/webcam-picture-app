@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  position: relative;
+  padding: 24px;
+  width: 248px;
+  height: 248px;
+  background: transparent;
+
+  /* border: 1px solid red; */
+}
+
+.wrapper {
+  width: 190px;
+  height: 190px;
+
+  overflow: hidden;
+
+  border-radius: 95px;
+  display: flex;
+  justify-content: center;
+
+  border: 2px solid rgba(0,0,0,.3);
+
+  box-shadow: 2px 4px 7px 0px rgba(0,0,0,.8);
+
+  -webkit-app-region: drag;
+}
+
+.wrapper video {
+  height: 190px;
+}
+
+.settings-card {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 10px;
+  left: 240px;
+
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 999;
+}
+
+.settings-card ul {
+  padding: 5px;
+
+  list-style: none;
+}
+
+.settings-card ul li {
+  padding: 5px;
+  background-color: #ccc;
+
+  margin-bottom: 10px;
+  border-radius: 4px;
+
+
+  display: flex;
+  align-items: center;
+  height: 40px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.settings-card ul li.active {
+  background-color: green;
+  color: #fff;
+}
+
+.settings-card ul li.inactive {
+  background-color: red;
+  color: #fff;
+}
